@@ -19,3 +19,5 @@ function  getHumanChoice(){
 let humanChoice=prompt("please chose one option: rock , paper , scissor")
 return console.log(humanChoice)
 }
+humanScore=0;
+computerScore=0;
