@@ -1,11 +1,18 @@
 
 function getComputerchoice(){   
 
-      let randomNumber= Math.floor(Math.random()*3)
-      const choice1= "rock"
-      const choice2= "scissor"
-      const choice3= "paper"
-
-      console.log(randomNumber)
+      let randomNumber= Math.floor(Math.random()*3);
+      const choice1= "rock";
+      const choice2= "scissor";
+      const choice3= "paper";
+      if  (randomNumber==0){
+        return console.log(choice1);
+      }
+     else if (randomNumber==1){
+        return console.log(choice2);
+     }
+     else{
+        return console.log(choice3);
+     }
 }
 getComputerchoice()
