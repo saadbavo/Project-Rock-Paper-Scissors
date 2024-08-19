@@ -15,4 +15,6 @@ function getComputerchoice(){
         return console.log(choice3);
      }
 }
-getComputerchoice()
+function humanchoice(){
+    
+}
