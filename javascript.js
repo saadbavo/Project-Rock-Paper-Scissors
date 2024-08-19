@@ -1,5 +1,5 @@
 
-function getComputerchoice(){   
+function getComputerChoice(){   
 
       let randomNumber= Math.floor(Math.random()*3);
       const choice1= "rock";
@@ -15,6 +15,7 @@ function getComputerchoice(){
         return console.log(choice3);
      }
 }
-function humanchoice(){
-    
+function  getHumanChoice(){
+let humanChoice=prompt("please chose one option: rock , paper , scissor")
+return console.log(humanChoice)
 }
