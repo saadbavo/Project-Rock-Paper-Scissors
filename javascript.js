@@ -21,3 +21,6 @@ return console.log(humanChoice)
 }
 humanScore=0;
 computerScore=0;
+function playRound(humanChoice,computerChoice){
+    
+}
