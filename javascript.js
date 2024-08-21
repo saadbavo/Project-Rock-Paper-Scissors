@@ -16,11 +16,11 @@ function getComputerChoice(){
      }
 }
 function  getHumanChoice(){
-let humanChoice=prompt("please chose one option: rock , paper , scissor")
+let humanChoice=prompt("please chose one option: rock , paper , scissor").toLowerCase()
 return console.log(humanChoice)
 }
 humanScore=0;
 computerScore=0;
 function playRound(humanChoice,computerChoice){
-    
+
 }
