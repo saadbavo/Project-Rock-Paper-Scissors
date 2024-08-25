@@ -14,6 +14,7 @@ function getHumanChoice(){
    alert("invald input please try again");
  }
 }
+function playGame(){
 let humanScore = 0;
 let computerScore = 0;
 function playRound(humanChoice, computerChoice){
@@ -70,3 +71,4 @@ function playRound(humanChoice, computerChoice){
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 playRound(humanSelection,computerSelection)
+}
