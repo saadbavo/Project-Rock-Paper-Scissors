@@ -32,12 +32,12 @@ function playRound(humanChoice, computerChoice){
       }
       
    }
-   if(humanChoice ==='rock'){
+   if(humanChoice ==='paper'){
       switch (computerChoice){
-         case 'scissor':
+         case 'rock':
             console.log("nice choice , you win!")
             break
-         case 'paper':
+         case 'scissor':
             console.log("you lose!try next time")
             break
          default:
@@ -46,12 +46,12 @@ function playRound(humanChoice, computerChoice){
       }
       
    }
-   if(humanChoice ==='rock'){
+   if(humanChoice ==='scissor'){
       switch (computerChoice){
-         case 'scissor':
+         case 'paper':
             console.log("nice choice , you win!")
             break
-         case 'paper':
+         case 'rock':
             console.log("you lose!try next time")
             break
          default:
