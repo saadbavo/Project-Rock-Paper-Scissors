@@ -16,3 +16,6 @@ function getHumanChoice(){
 }
 let humanScore = 0;
 let computerScore = 0;
+function playRound(humanChoice, computerChoice){
+   humanChoice=humanChoice.toLocaleLowerCase()
+}
