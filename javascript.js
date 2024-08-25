@@ -11,7 +11,8 @@ function getHumanChoice(){
    return choice;
  }
  else{
-   alert("invald input please try again")
+   alert("invald input please try again");
  }
 }
-getHumanChoice()
+let humanScore = 0;
+let computerScore = 0;
