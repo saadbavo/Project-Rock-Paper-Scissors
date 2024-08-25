@@ -75,5 +75,14 @@ playRound(humanSelection,computerSelection)
 console.log(humanScore ,computerScore)
 } 
 
+if(humanScore>computerScore){
+   console.log("you win")
+}
+else if(humanScore==computerScore){
+   console.log("it's tie")
+}
+else{
+   console.log("you lose")
+}
 }
 playGame()
