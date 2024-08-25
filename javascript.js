@@ -22,9 +22,11 @@ function playRound(humanChoice, computerChoice){
       switch (computerChoice){
          case 'scissor':
             console.log("nice choice , you win!")
+             humanScore++
             break
          case 'paper':
             console.log("you lose!try next time")
+            computerScore++
             break
          default:
             console.log("it's a tie")            
@@ -36,9 +38,11 @@ function playRound(humanChoice, computerChoice){
       switch (computerChoice){
          case 'rock':
             console.log("nice choice , you win!")
+            humanScore++
             break
          case 'scissor':
             console.log("you lose!try next time")
+            computerScore++
             break
          default:
             console.log("it's a tie")            
@@ -50,9 +54,11 @@ function playRound(humanChoice, computerChoice){
       switch (computerChoice){
          case 'paper':
             console.log("nice choice , you win!")
+            humanScore++
             break
          case 'rock':
             console.log("you lose!try next time")
+            computerScore++
             break
          default:
             console.log("it's a tie")            
@@ -61,3 +67,6 @@ function playRound(humanChoice, computerChoice){
       
    }
 }
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+playRound(humanSelection,computerSelection)
