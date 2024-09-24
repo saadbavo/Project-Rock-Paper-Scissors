@@ -4,16 +4,7 @@ function getComputerChoice(){
       return choices[Math.floor(Math.random()*3)] ;
 
 }
-function getHumanChoice(){
- let choice
- choice=window.prompt("rock, paper , scissor?:").toLocaleLowerCase();
- if(choices.includes(choice)){
-   return choice;
- }
- else{
-   alert("invald input please try again");
- }
-}
+
 
 let humanScore = 0;
 let computerScore = 0;
@@ -68,12 +59,11 @@ function playRound(humanChoice, computerChoice){
       
    }
 }
-for(let i=0; i<5; i++){
-   const humanSelection = getHumanChoice();
+
+
 const computerSelection = getComputerChoice()
-playRound(humanSelection,computerSelection)
+
 console.log(humanScore ,computerScore)
-} 
 
 if(humanScore>computerScore){
    console.log("you win")
@@ -84,3 +74,10 @@ else if(humanScore==computerScore){
 else{
    console.log("you lose")
 }
+const butt = document.querySelectorAll("#bnt")
+butt.addEventListener(('click'), () =>{
+   if (bnt.class) {
+      playRound(bnt.class)
+         
+      }
+   })
