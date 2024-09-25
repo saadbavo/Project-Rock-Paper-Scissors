@@ -76,8 +76,8 @@ else{
 }
 const butt = document.querySelectorAll("#bnt")
 butt.addEventListener(('click'), () =>{
-   if (bnt.class) {
-      playRound(bnt.class)
+   if (butt.value) {
+      playRound(butt.value)
          
       }
    })
