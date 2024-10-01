@@ -5,17 +5,8 @@ function getComputerChoice(){
 
 }
 
-const butt = document.querySelectorAll("#bnt")
-butt.forEach((butt)=>{
-butt.addEventListener('click', () =>{
-   if (butt.value) {
-      playRound(butt.value, computerSelection)
-         
-      }
-   })
-})
-let humanScore = 0;
-let computerScore = 0;
+let humanScore = 1;
+let computerScore = 1;
 function playRound(humanChoice, computerChoice){
    if(humanChoice ==='rock'){
       switch (computerChoice){
@@ -70,14 +61,21 @@ function playRound(humanChoice, computerChoice){
 
 const computerSelection = getComputerChoice()
 
-console.log(humanScore ,computerScore)
 
-if(humanScore>computerScore){
-   console.log("you win")
-}
-else if(humanScore==computerScore){
-   console.log("it's tie")
-}
-else{
-   console.log("you lose")
-}
+
+
+const butt = document.querySelectorAll("#bnt")
+butt.forEach((bnt)=>{
+bnt.addEventListener('click', () =>{
+   if (bnt.value) {
+      playRound(butt.value, computerSelection)
+         
+      }
+   })
+})
+const score= document.querySelector("#score");
+const playerAndComputerScore= document.createElement("div");
+playerAndComputerScore.classList.add("scores");
+playerAndComputerScore.textContent = humanScore+' '+computerScore;
+
+
