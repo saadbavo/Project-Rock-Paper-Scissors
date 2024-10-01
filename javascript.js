@@ -5,11 +5,18 @@ function getComputerChoice(){
 
 }
 
-
+const butt = document.querySelectorAll("#bnt")
+butt.forEach((butt)=>{
+butt.addEventListener('click', () =>{
+   if (butt.value) {
+      playRound(butt.value, computerSelection)
+         
+      }
+   })
+})
 let humanScore = 0;
 let computerScore = 0;
 function playRound(humanChoice, computerChoice){
-   humanChoice=humanChoice.toLocaleLowerCase()
    if(humanChoice ==='rock'){
       switch (computerChoice){
          case 'scissor':
@@ -74,10 +81,3 @@ else if(humanScore==computerScore){
 else{
    console.log("you lose")
 }
-const butt = document.querySelectorAll("#bnt")
-butt.addEventListener(('click'), () =>{
-   if (butt.value) {
-      playRound(butt.value)
-         
-      }
-   })
