@@ -5,21 +5,24 @@ function getComputerChoice(){
 
 }
 
-let humanScore = 1;
-let computerScore = 1;
+const resultDisplay = document.getElementById('result')
+let result
+
+let humanScore = 0;
+let computerScore = 0;
 function playRound(humanChoice, computerChoice){
    if(humanChoice ==='rock'){
       switch (computerChoice){
          case 'scissor':
-            console.log("nice choice , you win!")
+            result = '"nice choice , you win!"'
              humanScore++
             break
          case 'paper':
-            console.log("you lose!try next time")
+            result='"you lose!try next time"'
             computerScore++
             break
          default:
-            console.log("it's a tie")            
+            result = '"its a tie"'            
 
       }
       
@@ -27,15 +30,15 @@ function playRound(humanChoice, computerChoice){
    if(humanChoice ==='paper'){
       switch (computerChoice){
          case 'rock':
-            console.log("nice choice , you win!")
+            result = '"nice choice , you win!"'
             humanScore++
             break
          case 'scissor':
-            console.log("you lose!try next time")
+            result='"you lose!try next time"'
             computerScore++
             break
          default:
-            console.log("it's a tie")            
+            result = '"its a tie"'            
 
       }
       
@@ -43,19 +46,29 @@ function playRound(humanChoice, computerChoice){
    if(humanChoice ==='scissor'){
       switch (computerChoice){
          case 'paper':
-            console.log("nice choice , you win!")
+            result = '"nice choice , you win!"'
             humanScore++
             break
          case 'rock':
-            console.log("you lose!try next time")
+            result='"you lose!try next time"'
             computerScore++
             break
          default:
-            console.log("it's a tie")            
+            result = '"its a tie"'            
 
       }
       
    }
+
+   resultDisplay.innerHTML = result
+
+   const score= document.querySelector("#score");
+const playerAndComputerScore= document.createElement("div");
+playerAndComputerScore.classList.add("scores");
+playerAndComputerScore.textContent = humanScore+' '+computerScore;
+score.appendChild(playerAndComputerScore)
+
+
 }
 
 
@@ -67,13 +80,9 @@ const computerSelection = getComputerChoice()
 const butt = document.querySelectorAll("#bnt")
 butt.forEach((bnt)=>{
 bnt.addEventListener('click', () =>{
-console.log("love")
+ playRound(bnt.value, computerSelection)
 })
 })
 
-const score= document.querySelector("#score");
-const playerAndComputerScore= document.createElement("div");
-playerAndComputerScore.classList.add("scores");
-playerAndComputerScore.textContent = humanScore+' '+computerScore;
 
 
