@@ -67,12 +67,10 @@ const computerSelection = getComputerChoice()
 const butt = document.querySelectorAll("#bnt")
 butt.forEach((bnt)=>{
 bnt.addEventListener('click', () =>{
-   if (bnt.value) {
-      playRound(butt.value, computerSelection)
-         
-      }
-   })
+console.log("love")
 })
+})
+
 const score= document.querySelector("#score");
 const playerAndComputerScore= document.createElement("div");
 playerAndComputerScore.classList.add("scores");
