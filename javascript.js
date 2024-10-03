@@ -84,7 +84,18 @@ if (humanScore== 5){
 }
 
 else if(computerScore==5){
-   cons
+   const final = document.querySelector("#fscore")
+   const declarec = document.createElement("h1");
+   declarec.classList.add("dh");
+   declarec.textContent = "yOU lOSE! TRY AGAIN"
+   final.appendChild(declarec)
+   const restBto  = document.createElement("button")
+   restBto.setAttribute("id", "rst")
+   restBto.textContent= "RESTART"
+   restBto.addEventListener('click',()=>{
+      location.reload()
+   })
+   final.appendChild(restBto)
 }
 
 }
